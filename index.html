@@ -67,13 +67,17 @@
         label.style.width = width+"px";
         label.style.height = height+"px";
         label.style.zIndex = 1000;
-        label.innerHTML = "this is a test of voiceover";
+        // label.innerHTML = "this is a test of voiceover";
         // label.style.textIndent = "-9999px";    
 
         aria_txt = document.createAttribute("aria-label");
         aria_txt.value = "This is a test of a Cat"
+        role = document.createAttribute("role");
+        role.value = "region"
+
         label.setAttributeNode(aria_txt);
         document.body.appendChild(label);
+
 
 
 
