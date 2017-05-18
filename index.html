@@ -60,7 +60,7 @@
         width = 500;
         height = 80;
 
-        var label = document.createElement("div");
+        var label = document.createElement("img");
         label.style.position = 'absolute';
         label.style.left = x+"px";
         label.style.top = y+"px";
@@ -72,8 +72,8 @@
 
         aria_txt = document.createAttribute("aria-label");
         aria_txt.value = "This is a test of a Cat"
-        role = document.createAttribute("role");
-        role.value = "region"
+        alt = document.createAttribute("alt");
+        alt.value = "alt is this"
         label.style.backgroundColor = "blue";
 
         label.setAttributeNode(aria_txt);
